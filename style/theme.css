@@ -1,0 +1,126 @@
+.title-slide h1 {
+  font-size: 3.5rem !important;
+  color: navy !important;
+  font-family: Georgia, serif !important;
+  text-shadow: 2px 2px 5px lightgray;
+}
+
+.title-slide .subtitle {
+  font-size: 2rem !important;
+  color: darkred !important;
+}
+
+.title-slide .quarto-title-author-name {
+  font-size: 1.5rem !important;
+  color: gray !important;
+}
+
+.title-slide .date {
+  font-size: 1.2rem !important;
+  color: dimgray !important;
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url('../fonts/cmunsx.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url('../fonts/cmunsi.ttf');
+  font-style: italic, oblique;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url('../fonts/cmunss.ttf');
+}
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-weight: normal !important;
+  margin-bottom: 1rem !important;
+  margin-left: 0.5rem !important;
+  margin-top: 0.5rem !important;
+}
+
+.reveal h1 {
+  font-size: 2.5rem !important;
+  margin-bottom: 3rem !important;
+  text-align: center !important;
+}
+
+.reveal h2 {
+  font-size: 2.5rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.reveal h3 {
+  font-size: 1.75rem !important;
+}
+
+.reveal h4 {
+  font-size: 1.25rem !important;
+  font-weight: bold !important;
+}
+
+
+.quarto-title-author-name {
+  font-size: 1.5rem !important;
+}
+
+.date {
+  font-size: 1.5rem !important; 
+}
+
+
+/* Listy */
+.reveal ul {
+    display: block;
+    margin: 0 0 1em 1em;
+}
+
+.reveal li {
+    margin: 0.5em 0;
+}
+
+.reveal table.mniejsza_czcionka {
+    font-size: 0.7rem !important;  /* Zmniejsz rozmiar tekstu */
+}
+
+/* Bloki przykładów */
+
+/* Obrazy */
+.reveal img {
+    margin: 1em 0;
+    max-height: 500px;
+    width: auto;
+}
+
+@media print {
+  .slides {
+    box-shadow: none !important;
+    border-style: none;
+    border: none !important;
+  }
+  
+  .reveal .slides > section {
+    page-break-after: avoid !important;
+  }
+  
+  .reveal .slides > section > section {
+    page-break-after: avoid !important;
+  }
+
+  /* Hide any elements that might cause extra pages */
+  .backgrounds {
+    display: none !important;
+  }
+  
+  .absolute {
+    /* delikatna korekta jeśli potrzebna */
+    transform: translate(0, -50%) !important;  
+  }
+}

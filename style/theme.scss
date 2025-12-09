@@ -1,0 +1,163 @@
+/*-- scss:defaults --*/
+
+// fonts
+$font-family-sans-serif: "Computer Modern" !default;
+// $font-family-serif: 'Computer Modern' !default;
+$code-font-size: 0.9rem;
+$code-block-font-size: 0.9em;
+$code-inline-font-size: 0.9em;
+
+// Vertical spacing between blocks of text
+$blockMargin: 12px;
+
+// colors
+$body-bg: #ffffff !default;
+$body-color: #000 !default;
+$link-color: #3333b3 !default;
+$selection-bg: #26351c !default;
+
+
+// headings
+$presentation-heading-font: 'Computer Modern' !default;
+$presentation-heading-color: #3333b3 !default;
+
+
+$h1-font-size: 1.6em !default;
+$h2-font-size: 1.3em !default;
+$h3-font-size: 1.15em !default;
+$h4-font-size: 1em !default;
+
+// code blocks - remove any existing styling that might interfere
+$code-block-bg: transparent !default;
+$code-block-border-color: #495057 !default;
+$code-color: inherit !default;
+
+// code blocks
+//$highlight-style: a11y !default;
+
+//
+// Color system
+//
+
+// stylelint-disable
+$white:    #fff !default;
+$gray-100: #fdf6e3 !default;
+$gray-200: #eee8d5 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #839496 !default;
+$gray-700: #495057 !default;
+$gray-800: #073642 !default;
+$gray-900: #002b36 !default;
+$black:    #000 !default;
+
+/*-- scss:rules --*/
+
+// title and headings
+
+.reveal pre {
+  margin: 0.5em 0;
+}
+
+.reveal pre code {
+  display: block;
+  max-height: 500px;
+  overflow: auto;
+  padding: 0.5em;
+  font-size: $code-block-font-size;
+  background-color: transparent;
+  code-color: #4758AB;
+}
+
+.reveal p code {
+  color: #4758AB;
+  font-family: monospace;
+}
+.reveal figcaption {
+    text-align: center;
+}
+
+.reveal .slides section .fragment.semi-fade-out {
+	opacity: 1;
+	visibility: inherit;
+
+	&.visible {
+		opacity: 0.25;
+		visibility: inherit;
+	}
+}
+
+.sectionhead {
+  font-size: 1em;
+  text-align: center;
+  color: $presentation-heading-color;
+  font-family: $presentation-heading-font;
+  background-color: $body-bg;
+  margin: 0.3em;
+  padding: 2px 2px 2px 2px;
+  width: 120px;
+  border-left: 10px solid;
+}
+
+.blackbox {
+  color: #000000;
+  background-color: transparent;
+  margin: 1px;
+  padding: 5px 2px 5px 2px;
+  height: 205px;
+  border: 2px solid;
+}
+.message{
+    color: $presentation-heading-color;
+    font-size: $h2-font-size;
+    font-family: $presentation-heading-font;
+    text-align:center;
+}
+
+.space-left {
+    margin-left: 5%;
+} 
+
+.center-xy {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%), translateX(-50%);
+    transform: translateY(-50%), translateX(-50%);
+}
+
+
+.small {
+    font-size: 0.8em
+}
+
+.Large {
+    font-size: 1.6em
+}
+
+section.has-dark-background a {
+    color: $white;
+    border-style: dashed;
+    border-bottom-width: 1px;
+}
+
+section.has-dark-background a:hover {
+    color: $white;
+    border-bottom: solid
+}
+
+.reveal a {
+  line-height: 1.3em;
+}
+
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+  color: #3333b3;
+  height: 1%;
+}
+
+.smallcode {
+  font-size: 0.6em !important;  /* dodaj !important aby nadpisać inne style */
+}

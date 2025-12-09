@@ -1,0 +1,69 @@
+---
+title: "RS"
+editor: visual
+institute: "KMMiS, UPP"
+date: "2026"
+date-format: "NULL"
+bibliography: references.bib
+execute:
+  echo: true
+format: 
+  revealjs:
+    theme: [default, style/theme.scss]
+    css: style/theme.css
+    html-math-method: mathml
+    margin-left: '3rem'
+    slide-number: true
+    navigation-mode: linear
+    embed-resources: true 
+    toc: false
+    toc-depth: 1
+    toc-title: "Plan przedmiotu"
+    show-slide-number: all
+    pdf-max-pages-per-slide: 1
+    code-block-bg: true
+    highlight-style: arrow
+progress: true
+menu: true
+smaller: true
+scrollable: false
+margin: 0.1
+revealOptions:
+  width: 1280
+  height: 720
+disable-layout: false
+transition: fade
+transition-speed: default
+engine: knitr
+---
+```{r setup, include = FALSE}
+library(ggplot2)
+library(plotly)
+library(dplyr)
+library(knitr)
+Movi <- read.csv("data/Trending_Movies.csv")
+
+```
+## [Dane](https://www.kaggle.com/datasets/amitksingh2103/trending-movies-over-the-years)
+
+## par2
+1  | 
+------------------ | -------------
+1.1 | 2.1
+1.2 | 2.2
+## Bullets
+
+![img](fig/pingwiny.png){fig-cap="Przykładowy rysunek" width=70%}
+
+## Code
+```{r}
+
+```
+
+##nowa
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
