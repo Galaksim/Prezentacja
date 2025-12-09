@@ -36,6 +36,7 @@ transition: fade
 transition-speed: default
 engine: knitr
 ---
+
 ```{r setup, include = FALSE}
 library(ggplot2)
 library(plotly)
@@ -44,19 +45,24 @@ library(knitr)
 Movi <- read.csv("data/Trending_Movies.csv")
 
 ```
+
 ## [Dane](https://www.kaggle.com/datasets/amitksingh2103/trending-movies-over-the-years)
 
 ## par2
-1  | 
------------------- | -------------
-1.1 | 2.1
-1.2 | 2.2
+
+| 1   |     |
+|-----|-----|
+| 1.1 | 2.1 |
+| 1.2 | 2.2 |
+
 ## Bullets
 
-![img](fig/pingwiny.png){fig-cap="Przykładowy rysunek" width=70%}
+![img](fig/pingwiny.png){fig-cap="Przykładowy rysunek" width="70%"}
 
 ## Code
+
 ```{r}
+plot_ly(Movi, x = movi$release_date,y = movi$vote_average,type = "scatter",mode = "markers",color = ~Species)
 
 ```
 
